@@ -9,22 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Challenger: Encriptador</title>
+    <title>Desaf&iacute;o uno: Encriptador</title>
 </head>
 <body>
     <header>
-        <h1><img src="img/Logo.png" alt="Logo de Alura Latam"></h1>
+        <h1><img src="/img/Logo.png" alt="Logo de Alura Latam" class="logo"></h1>
     </header>
     <main>
         <section class="text-input">
-
+            <textarea placeholder="Ingrese el texto" id="text-area" cols="30" rows="10" class="text-area"></textarea>
+            <h6 class="informacion"> ! Solo letras min&uacute;sculas y sin acentos</h6>
+            <div class="botones">
+                <button type="button" class="btn-encriptado" onclick="btnEncriptar()">Encriptar</button>
+                <button type="button" class="btn-desencriptado" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
         </section>
-        <section class="text-autput">
-
+        <section class="text-output">
+            <div class="mensaje-vacio">
+                <img src="/img/Munieco.png" alt="Munieco con Lupa" class="dibujo">
+                <h3>Ning&uacute;n mensaje encontrado</h3>
+                <p>Ingrese el texto a encriptar o desencriptar</p>
+            </div>
+            <textarea id="mensaje" cols="20" rows="10" class="mensaje"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
         </section>
     </main>
     <footer>
-        <p class="copyright">&copy;Copyright 2023 - <a href="https://github.com/guiller577">Elsa Guillermina Morel Bentancour</a></p>
+        <p>&copy;Copyright 2023 - <a href="https://github.com/guiller577">Elsa Guillermina Morel Bentancour</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
